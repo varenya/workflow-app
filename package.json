@@ -1,0 +1,22 @@
+{
+  "name": "workflow-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Varenya <varen90@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:css": "tailwindcss build frontend/styles/tailwind.css -o dist/tailwind.css",
+    "dev": "parcel frontend/index.html",
+    "build:frontend": "parcel build frontend/index.html --out-dir ./dist/",
+    "start:server": "node server/index.js"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "sqlite3": "^4.2.0",
+    "tailwindcss": "^1.4.6"
+  }
+}
